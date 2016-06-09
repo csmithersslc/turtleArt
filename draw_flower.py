@@ -13,7 +13,7 @@ def draw_square():
 
 	#Make the turtle object then an instance of that class/object
 	#In other words now that we make on object from the template
-	# I named the tutle in this instance Charles with a turtle shape, white color and a custom speed
+	# I named the tutle in this instance Daisy (flower after all) with a turtle shape, white color and a custom speed
 	daisy = turtle.Turtle()
 	daisy.shape("turtle")
 	daisy.color("white")
@@ -21,13 +21,14 @@ def draw_square():
 
 	move = 50
 	#since we are doing this step a few times, a loop is adviasable.  Using a for loop since he's doing this FOR a certain number of times
-	for move in range (0, 43):
+	for move in range (0, 36):
 		#we then call the forward function in the library to tell the turtle to move an x distance
-		daisy.right(5)
+		daisy.right(6)
 		daisy.forward(100)
 		#now the turtle has to stop and turn to the right 90 degrees
 		daisy.right(90)
 		#let's make more intricate shapes
+	daisy.right(235)
 	daisy.forward(200)
 		
 			
@@ -35,4 +36,3 @@ def draw_square():
 draw_square()
 
 window.exitonclick()
-#can you tell I read my biology well?  Charles Robert Darwin was an interesting fellow
